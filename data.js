@@ -1,7 +1,10 @@
 localStorage.setItem("dollars", 0)
 localStorage.setItem("dpc", 1)
 localStorage.setItem("costone", 50)
+var markdownResult;
 var clicking = document.querySelector(".clicks")
+var urlShare = document.querySelector(".url-to-share")
+var textarea1 = document.querySelector(".textarea-result")
 
 function clicksEarn() {
     localStorage.dollars = Number(localStorage.dollars) + Number(localStorage.dpc);
@@ -22,3 +25,9 @@ function openDialog(id) {
 setInterval(() => {
     clicking.innerHTML = "Your Haven " + localStorage.dollars + " Dollars."
 }, 100);
+
+setInterval(() => {
+    markdownResult = "@jwklong Open [Link](" + urlShare.value + ")"
+
+    textarea1.value = markdownResult;
+}, 1000);
