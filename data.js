@@ -7,8 +7,10 @@ function clicksEarn() {
 }
 
 function buyCursor() {
-    localStorage.dollars = Number(localStorage.dollars) - 50;
-    localStorage.dpc = Number(localStorage.dpc) + 1;
+    if (localStorage.dollars >= 50) {
+        localStorage.dollars = Number(localStorage.dollars) - 50;
+        localStorage.dpc = Number(localStorage.dpc) + 1;
+    }
 }
 
 setInterval(() => {
