@@ -1,0 +1,1 @@
+localStorage.setItem("dollars", 0)
