@@ -16,7 +16,7 @@ function buyCursor() {
 }
 
 function openDialog(id) {
-    document.querySelector("dialog" + id).open = true;
+    document.querySelector(".dialog" + id).open = true;
 }
 
 setInterval(() => {
