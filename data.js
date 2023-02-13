@@ -15,6 +15,10 @@ function buyCursor() {
     }
 }
 
+function openDialog(id) {
+    document.querySelector("dialog" + id).open = true;
+}
+
 setInterval(() => {
     clicking.innerHTML = "Your Haven " + localStorage.dollars + " Dollars."
 }, 100);
